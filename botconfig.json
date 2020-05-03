@@ -1,0 +1,8 @@
+{
+    "token": "NzAzODE5MzcyMzE3MTE0Mzc4.XqvA7A.XT8HSoIiDhYGj1Dey0NQHBQuIQY",
+    "prefix": "!!",
+    "nodes": [
+        { "host": "localhost", "port": 2333, "password": "youshallnotpass"}
+    ],
+    "ownerid": "597822927198748686"
+}
