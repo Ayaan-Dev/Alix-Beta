@@ -1,8 +1,8 @@
 {
-    "token": "NzAzODE5MzcyMzE3MTE0Mzc4.XqvA7A.XT8HSoIiDhYGj1Dey0NQHBQuIQY",
-    "prefix": "!!",
+    "token": "Your Token",
+    "prefix": "Prefix",
     "nodes": [
-        { "host": "localhost", "port": 2333, "password": "youshallnotpass"}
+        { "host": "Host Name", "port": 2333, "password": "Your Pass"}
     ],
-    "ownerid": "597822927198748686"
+    "ownerid": "Owner Id"
 }
