@@ -1,0 +1,52 @@
+const { RichEmbed } = require("discord.js")
+const { redlight } = require("../../colours.json");
+
+module.exports = {
+    config: {
+        name: "ban",
+        description: "Bans a user from the guild!",
+        usage: "!ban",
+        category: "moderation",
+        accessableby: "Administrators",
+        aliases: ["b", "banish", "remove"]
+    },
+    run: async (bot, message, args) => {
+      
+      const eembed = new RichEmbed()
+      .setColor('RED')
+      .setTitle('**UNDER DEVELOPMENT** <a:loadingag:716132360260812832>')
+      .setImage('https://cdn.discordapp.com/attachments/693162955013095494/721292567211147274/avento.gif')
+      .setTimestamp()
+      return message.channel.send(eembed)
+
+   if(!message.member.hasPermission(["BAN_MEMBERS", "ADMINISTRATOR"])) return message.channel.send("You do not have permission to perform this command!")
+
+   let banMember = message.mentions.members.first() || message.guild.members.get(args[0]) 
+   if(!banMember) return message.channel.send("Please provide a user to ban!")
+
+   let reason = args.slice(1).join(" ");
+   if(!reason) reason = "No reason given!"
+
+   if(!message.guild.me.hasPermission(["BAN_MEMBERS", "ADMINISTRATOR"])) return message.channel.send("I dont have permission to perform this command")
+
+   banMember.send(`Hello, you have been banned from ${message.guild.name} for: ${reason}`).then(() =>
+   message.guild.ban(banMember, { days: 1, reason: reason})).catch(err => console.log(err))
+
+   message.channel.send(`**${banMember.user.tag}** has been banned`).then(m => m.delete(5000))
+
+    let embed = new RichEmbed()
+    .setColor(redlight)
+    .setAuthor(`${message.guild.name} Modlogs`, message.guild.iconURL)
+    .addField("Moderation:", "ban")
+    .addField("Mutee:", banMember.user.username)
+    .addField("Moderator:", message.author.username)
+    .addField("Reason:", reason)
+    .addField("Date:", message.createdAt.toLocaleString())
+    
+        let sChannel = message.guild.channels.find(c => c.name === "modlogs")
+            if(!sChannel) {
+        return message.channel.send("**You don't have a channel with name **`modlogs` **kindly please make a channel called **`modlogs` **to show up all moderation command logs used up in NEFFEX BOT**") 
+         }
+        sChannel.send(embed)
+    }
+}

@@ -1,6 +1,5 @@
-const Discord = require("discord.js")
-
+const Discord = require("discord.js");
 
 module.exports = bot => {
-    console.log(`You have been disconnected at ${Date()}.`)
-}
+  console.log(`You have been disconnected at ${Date()}.`);
+};
