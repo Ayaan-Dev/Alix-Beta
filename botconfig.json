@@ -1,6 +1,6 @@
 {
     "token": "NzIxMzQ4MzQyMDEzMTAwMTEz.XvLTBQ.H3kGEqz51QnVEt9Lc6LMyZDoIyc",
-    "default_prefix": "!!",
+    "default_prefix": "ds!",
     "nodes": [
         { "host": "localhost", "port": 2333, "password": "youshallnotpass"}
     ],
