@@ -9,5 +9,5 @@ const load = dirs => {
         if(pull.config.aliases) pull.config.aliases.forEach(a => bot.aliases.set(a, pull.config.name))
         }
     }
-    ["miscellaneous", "moderation", "music", "owner", "games", "image", "economy"].forEach(x => load(x))
+    ["miscellaneous", "moderation", "owner", "games", "image", "economy"].forEach(x => load(x))
 }
