@@ -2,6 +2,7 @@
 
 # Alix Beta
 
+[![Run on Repl.it](https://repl.it/badge/github/ayaan1005/Alix-Beta)](https://repl.it/github/ayaan1005/Alix-Beta)
 [![](https://img.shields.io/discord/565048515357835264.svg?logo=discord&colorB=7289DA)](https://alix.glitch.me)
 [![](https://top.gg/api/widget/status/693846748824862770.svg)](https://top.gg/bot/693846748824862770/vote)
 [![](https://img.shields.io/badge/discord.js-v12.0.0--dev-blue.svg?logo=npm)](https://github.com/discordjs)
