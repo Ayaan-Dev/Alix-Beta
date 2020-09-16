@@ -1,4 +1,4 @@
-<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="Atlanta" src="https://is.gd/nb1fp4">  
+<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="Alix-Beta" src="https://is.gd/nb1fp4">  
 
 # Alix Beta
 
