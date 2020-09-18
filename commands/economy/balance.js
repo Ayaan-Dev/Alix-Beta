@@ -5,7 +5,7 @@ module.exports = {
     config: {
         name: "balance",
         aliases: ["bal"],
-        usage: "!!balance",
+        usage: "/balance",
         category: "economy",
         description: "Checks you blance!",
         accessableby: "Members"
