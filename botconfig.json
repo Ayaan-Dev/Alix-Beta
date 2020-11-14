@@ -1,9 +1,9 @@
 {
-    "token": "NzI3NzgxNDg2Njg1NzE2NDgy.Xvw1Uw.5n0c7Lei6W27SMBi9GM5HG68y2k",
-    "prefix": "!!",
+    "token": "Your Bot Token",
+    "prefix": "Bot Prefix",
     "report_channelid": "Channel ID Where Bug Reports Comes",
     "support_server": "Your Bots Support Server",
-    "main_ownerid": "597822927198748686",
+    "main_ownerid": "Your Id",
     "extra_ownerid": [
       "Owner 1",
       "Owner 2"
