@@ -8,7 +8,7 @@
 [![](https://img.shields.io/badge/discord.js-v12.0.0--dev-blue.svg?logo=npm)](https://github.com/discordjs)
 [![](https://img.shields.io/badge/patreon-donate-orange.svg)](https://www.patreon.com/alixbot)
 
-> This bot is used by more than 70,000+ Discord users and more than 90+ servers.
+> This bot is used by more than 100k+ Discord users and more than 120+ servers.
 
 Alix Beta Is A Open Sourced Discord Bot Can Use In Many Was Like To Make Server Full Moderation Filled, And Fun. Coded With JavaScript [Discord.js](https://discord.js.org) And [Quick.db](https://quickdb.js.org/) Made By [AyaanDEV](https://github.com/ayaan1005/)
 <br> Feel free to add a star ⭐ to the repository to promote the project!
