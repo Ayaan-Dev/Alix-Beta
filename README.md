@@ -15,7 +15,7 @@ Alix Beta Is A Open Sourced Discord Bot Can Use In Many Was Like To Make Server 
 
 ## Bot Setup
 
-Check Bot Config File [Here](https://github.com/ayaan1005/Alix-Beta/blob/master/botconfig.json)
+Check Bot Config File [Here](https://github.com/ayaan1005/Alix-Beta/blob/glitch/botconfig.json)
 
 Example BotConfig File - 
 ```
