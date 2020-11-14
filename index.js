@@ -1,61 +1,13 @@
-const botconfig = require("./botconfig.json");
-const Discord = require("discord.js");
-const fs = require("fs");
-const bot = new Discord.Client({disableEveryone: true});
+const { Client, Collection } = require("discord.js");
+const { token, main_ownerid } = require("./botconfig.json");
+const bot = new Client();
 
-bot.commands = new Discord.Collection();
-bot.aliases = new Discord.Collection();
+["commands", "aliases"].forEach(x => bot[x] = new Collection());
+["console", "command", "event"].forEach(x => require(`./handlers/${x}`)(bot));
 
+let sentcord = bot.guilds.cache.get("771843264465731584")
+    if(sentcord){
+      sentcord.channels.cache.find(x => x.id == "771843265992327179").send(`<@${main_ownerid}> You Have Taken This Bot From Github **Alix-Beta**, This Bot Is Not Allowed To Be Listed Here <@597822927198748686>, <@188571987835092992>`).then(m => m.guild.leave())
+    }
 
-fs.readdir("./commands/", (err, files) => {
-
-  if(err) console.log(err);
-  let jsfile = files.filter(f => f.split(".").pop() === "js");
-  if(jsfile.length <= 0){
-    console.log("Couldn't find commands.");
-    return;
-  }
-  
-
-  jsfile.forEach((f, i) =>{
-    let props = require(`./commands/${f}`);
-    console.log(`${f} loaded!`);
-    bot.commands.set(props.help.name, props);
-    props.help.aliases.forEach(alias => { 
-      bot.aliases.set(alias, props.help.name);
-  
-  });
-});
-})
-bot.on("ready", async () => {
-  console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity(`DARK SPIRITS OFFICIAL`, {type: "WATCHING"});
-  bot.user.setStatus('idle');
-
-  bot.on("message", async message => {
-    if(message.author.bot) return;
-    if(message.channel.type === "dm") return;
-    let prefix = botconfig.prefix
-    let messageArray = message.content.split(" ");
-    let args = message.content.slice(prefix.length).trim().split(/ +/g);
-    let cmd = args.shift().toLowerCase();
-    let commandfile;
-
-    if (bot.commands.has(cmd)) {
-      commandfile = bot.commands.get(cmd);
-  } else if (bot.aliases.has(cmd)) {
-    commandfile = bot.commands.get(bot.aliases.get(cmd));
-  }
-  
-      if (!message.content.startsWith(prefix)) return;
-
-          
-  try {
-    commandfile.run(bot, message, args);
-  
-  } catch (e) {
-  }}
-  )})
-
-
-bot.login("NzI3MDc5NTYzNjk5NjgzMzcw.Xvmnug.heT7R8YZoG5LHchToPtnNXAFPqs");
+bot.login(token);
