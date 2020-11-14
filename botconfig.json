@@ -1,8 +1,11 @@
 {
-    "token": "Your Token",
-    "prefix": "Prefix",
-    "nodes": [
-        { "host": "Host Name", "port": 2333, "password": "Your Pass"}
-    ],
-    "ownerid": "Owner Id"
+    "token": "Your Bot Token",
+    "prefix": "Bot Prefix",
+    "report_channelid": "Channel ID Where Bug Reports Comes",
+    "support_server": "Your Bots Support Server",
+    "main_ownerid": "Your Id",
+    "extra_ownerid": [
+      "Owner 1",
+      "Owner 2"
+    ]
 }
