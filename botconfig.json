@@ -4,6 +4,7 @@
     "report_channelid": "Channel ID Where Bug Reports Comes",
     "support_server": "Your Bots Support Server",
     "main_ownerid": "Your Id",
+    "InstaToken": "Your Insta Token Here",
     "extra_ownerid": [
       "Owner 1",
       "Owner 2"
