@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 const Insta = require('scraper-instagram');
 const AlixInstagram = new Insta();
-let yourSessionId = "9745752995%3AEPWluqFnMIF4xT%3A19"
+const { InstaToken } = require("../../botconfig")
+let yourSessionId = InstaToken;
 
 module.exports = {
   config: {
