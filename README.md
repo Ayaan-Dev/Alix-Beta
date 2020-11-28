@@ -36,9 +36,9 @@ Example BotConfig File -
 
 ## Upcoming Updates
 
-# BUGS FIX
-# MORE COMMAND ADD
-# DASHBOARD
+### BUGS FIX
+### MORE COMMAND ADD
+### DASHBOARD
 
 ## Links
 
