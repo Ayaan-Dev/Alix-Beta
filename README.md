@@ -34,6 +34,12 @@ Example BotConfig File -
 
 ```
 
+## Upcoming Updates
+
+# BUGS FIX
+# MORE COMMAND ADD
+# DASHBOARD
+
 ## Links
 
 *   [Commands List](https://allix.glitch.me/commands)
