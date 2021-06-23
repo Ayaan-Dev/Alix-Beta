@@ -10,7 +10,7 @@
 
 > This bot is used by more than 100k+ Discord users and more than 120+ servers.
 
-Alix Beta Is A Open Sourced Discord Bot Can Use In Many Was Like To Make Server Full Moderation Filled, And Fun. Coded With JavaScript [Discord.js](https://discord.js.org) And [Quick.db](https://quickdb.js.org/) Made By [AyaanDEV](https://github.com/ayaan1005/)
+Alix Beta Is A Open Sourced Discord Bot Can Use In Many Was Like To Make Server Full Moderation Filled, And Fun. Coded With JavaScript [Discord.js](https://discord.js.org) And [Quick.db](https://quickdb.js.org/) Made By [AyaanDEV](https://github.com/Ayaan-GuitarHost/)
 <br> Feel free to add a star ⭐ to the repository to promote the project!
 
 ## Bot Setup
