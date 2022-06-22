@@ -10,7 +10,7 @@
   "author": "ayaan",
   "license": "ISC",
   "dependencies": {
-    "async": "^3.2.0",
+    "async": "^3.2.2",
     "common-tags": "^1.8.0",
     "cpu-stat": "^2.0.1",
     "cpu-stats": "^1.0.0",
